@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bgIV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_380sdp"
+                android:layout_centerInParent="true">
+
+                <LinearLayout
+                    android:gravity="top|center_vertical|center_horizontal|center"
+                    android:orientation="vertical"
+                    android:background="@drawable/box_bg"
+                    android:paddingLeft="@dimen/_30sdp"
+                    android:paddingTop="@dimen/_55sdp"
+                    android:paddingRight="@dimen/_30sdp"
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_320sdp"
+                    android:layout_centerInParent="true">
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15sdp">
+
+                        <TextView
+                            android:textSize="@dimen/_18sdp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vibration"
+                            android:shadowColor="@color/shadow_green"
+                            android:shadowDx="0"
+                            android:shadowDy="10"
+                            android:shadowRadius="2"
+                            android:layout_centerVertical="true" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:layout_gravity="center"
+                            android:id="@+id/vibration_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:thumb="@drawable/thumb"
+                            android:layout_alignParentRight="true"
+                            app:track="@drawable/s_bg" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15sdp">
+
+                        <TextView
+                            android:textSize="@dimen/_18sdp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sound"
+                            android:shadowColor="@color/shadow_green"
+                            android:shadowDx="0"
+                            android:shadowDy="10"
+                            android:shadowRadius="2" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:layout_gravity="center"
+                            android:id="@+id/sound_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:thumb="@drawable/thumb"
+                            android:layout_alignParentRight="true"
+                            app:track="@drawable/s_bg" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@+id/rate_us_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15sdp">
+
+                        <TextView
+                            android:textSize="@dimen/_18sdp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ratings"
+                            android:shadowColor="@color/shadow_green"
+                            android:shadowDx="0"
+                            android:shadowDy="10"
+                            android:shadowRadius="2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@+id/share_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15sdp">
+
+                        <TextView
+                            android:textSize="@dimen/_18sdp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Share"
+                            android:shadowColor="@color/shadow_green"
+                            android:shadowDx="0"
+                            android:shadowDy="10"
+                            android:shadowRadius="2" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@+id/privacy_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="@dimen/_18sdp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Privacy Policy"
+                            android:shadowColor="@color/shadow_green"
+                            android:shadowDx="0"
+                            android:shadowDy="10"
+                            android:shadowRadius="2" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_55sdp"
+                    android:src="@drawable/setting"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageView
+                    android:id="@+id/settings_back_btn"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:src="@drawable/sback"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/celebrate_animationView"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_240sdp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="winner.json"
+            app:lottie_loop="true" />
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:id="@+id/container_1"
+            android:background="@drawable/dpopup_bg"
+            android:visibility="gone"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_240sdp">
+
+            <ImageView
+                android:padding="@dimen/_5sdp"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/winner"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/centerLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/offline_game_player_img"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:src="@drawable/circle" />
+
+                <TextView
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:id="@+id/titleTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Player Win!"
+                    android:shadowColor="@color/shadow_green"
+                    android:shadowDx="0"
+                    android:shadowDy="10"
+                    android:shadowRadius="2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_below="@+id/centerLay"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/offline_game_quit_btn"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginRight="@dimen/_7sdp"
+                    android:src="@drawable/cancal" />
+
+                <ImageView
+                    android:id="@+id/offline_game_continue_btn"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:src="@drawable/replay" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

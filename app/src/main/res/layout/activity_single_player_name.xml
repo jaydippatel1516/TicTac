@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bgIV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_320sdp"
+                android:layout_centerInParent="true">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/box_bg"
+                    android:layout_width="@dimen/_240sdp"
+                    android:layout_height="@dimen/_260sdp"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:textSize="@dimen/_20sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:text="Player Name"
+                        android:shadowColor="@color/shadow_green"
+                        android:shadowDx="0"
+                        android:shadowDy="10"
+                        android:shadowRadius="2" />
+
+                    <EditText
+                        android:textSize="18dp"
+                        android:textColor="#fff"
+                        android:textColorHint="#e0dfdf"
+                        android:id="@+id/player_name_edt"
+                        android:background="@drawable/name_bg"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:paddingRight="@dimen/_20sdp"
+                        android:layout_width="@dimen/_180sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:hint="Enter Name"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:maxLength="10" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/back_btn"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_55sdp"
+                    android:src="@drawable/back"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageView
+                    android:id="@+id/next_btn"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:src="@drawable/next"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

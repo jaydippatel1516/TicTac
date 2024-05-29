@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main_bg">#4a78d6</color>
+    <color name="player_one_txt">#0059c3</color>
+    <color name="player_two_txt">#b96400</color>
+    <color name="purple_200">#809edc</color>
+    <color name="purple_500">#809edc</color>
+    <color name="purple_700">#809edc</color>
+    <color name="shadow_color">#3960af</color>
+    <color name="shadow_green">#688d06</color>
+    <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
+    <color name="teal_200">#809edc</color>
+    <color name="teal_700">#809edc</color>
+</resources>
